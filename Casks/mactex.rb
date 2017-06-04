@@ -12,12 +12,12 @@ cask 'mactex' do
   pkg "mactex-#{version}.pkg"
 
   uninstall pkgutil: [
-                       'org.tug.mactex.ghostscript9.19',
-                       'org.tug.mactex.gui2016',
-                       'org.tug.mactex.texlive2016',
+                       'org.tug.mactex.ghostscript9.21',
+                       'org.tug.mactex.gui2017',
+                       'org.tug.mactex.texlive2017',
                      ],
             delete:  [
-                       '/usr/local/texlive/2016',
+                       '/usr/local/texlive/2017',
                        '/Applications/TeX',
                        '/Library/PreferencePanes/TeXDistPrefPane.prefPane',
                        '/etc/paths.d/TeX',
@@ -40,7 +40,7 @@ cask 'mactex' do
                 '~/Library/Preferences/fr.chachatelier.pierre.LaTeXiT.plist',
                 '~/Library/Preferences/TeXShop.plist',
                 '~/Library/Saved Application State/edu.bucknell.Excalibur.savedState',
-                '~/Library/texlive/2016',
+                '~/Library/texlive/2017',
                 '~/Library/TeXShop',
               ],
       rmdir:  [
